@@ -21,7 +21,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v1.3.2 Global Stable',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
+    SESSION: process.env.ASENA_SESSION === undefined ? 'ASENA;;;eyJjbGllbnRJRCI6InpXMWdvNkhNazRxdnZZdmhrSDFSdXc9PSIsInNlcnZlclRva2VuIjoiMUBDM04vSnhkK1RYWlZTa2xuZ0o3cksrWXdPb1ZJQ2lHVk13NDFsVXlIVmtLeHd6VGZFYy91d05QNTFpRVpjbytib01IVEhMZ1hZb1dqb3c9PSIsImNsaWVudFRva2VuIjoiRzNRQXBoMmtTU0FOQ0x0VjZGK2NrcktJcEI5ZURYZGZCR0hQa2FNTDYzWT0iLCJlbmNLZXkiOiJaZzVvT2ZDL1pCYVJFTlBsY2o2S2M1SnR5TTRvL1EzNnpWcUJzR0l3cTV3PSIsIm1hY0tleSI6Im5kaVVQd2taZHRYNC95TVNOSk52M1c2RWl6RXZBVDFGc0lXYlMwdXJBZTg9In0=' : process.env.ASENA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
@@ -46,8 +46,8 @@ module.exports = {
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
-        API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
-        APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
+        API_KEY: process.env.HEROKU_API_KEY === undefined ? 'f2fb2a7c-790b-494c-b6a0-942a916e7f46' : process.env.HEROKU_API_KEY,
+        APP_NAME: process.env.HEROKU_APP_NAME === undefined ? 'iibb' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
